@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.justyify-between{
+    justify-content: space-between;
+}
+
+.justyify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.p-20px{
+    padding: 20px;
+}
+
+.fa-building-columns{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.user-profile{
+    border-radius: 50%;
+    border: 3px solid;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+
+.transactions-input-cont{
+    width: 97%;
+    height: 70px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+.transactions-input-cont>*{
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);;
+}
+
+table{
+    width: 97%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+
+}
+
+#record-section{
+    margin-top: 20px;
+}
+
+table td{
+    border-bottom: 1px solid rgb(63, 62, 62);
+    padding: 20px;
+    text-align: center;
+}
+
+table tr:nth-child(odd){
+    background-color: rgb(204, 200, 200);
+}
+

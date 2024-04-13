@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3347965def.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="flex justyify-between align-center">
+        <div class="flex align-center p-20px">
+            <i class="fa-solid fa-building-columns"></i>
+            <h1>tBanking</h1>
+        </div>
+        <div class="p-20px">
+            <span class="user-profile"><i class="fa-solid fa-user"></i></span>
+        </div>
+    </header>
+
+    <section>
+        <main class="transactions-input-cont flex justyify-between align-center">
+            <input type="text" placeholder="Transaction Description" id="description" required>
+            <input type="number" id="amount" placeholder="amount" required>
+            <select id="transaction-method" required>
+                <option value="none" disabled selected hidden>Select Transfer Method</option>
+                <option value="cash">Cash</option>
+                <option value="credit">Credit</option>
+                <option value="check">Check</option>
+                <option value="etransfer">Digital Wallet(paypal, venmo)</option>
+            </select>
+            <input type="number" disabled id="ref-num" placeholder="Transaction ID (auto)">
+            <button id="add-record">Add record</button>
+        </main>
+    </section>
+
+    <section id="record-section">
+        <table id="record-table">
+            <!-- new input -->
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
